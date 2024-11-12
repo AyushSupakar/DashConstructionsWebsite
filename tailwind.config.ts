@@ -1,5 +1,25 @@
 import type { Config } from "tailwindcss";
+const { nextui } = require("@nextui-org/react");
 
+module.exports = {
+  // ...
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: "#0072f5",
+          }
+        },
+        dark: {
+          colors: {
+            primary: "#0072f5",
+          }
+        },
+      },
+    }),
+  ]
+}
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",

@@ -1,6 +1,10 @@
+import Home from "./components/Home"
+
 const HomePage = () => {
   return (
-    <div className=''>Dash Constructions Official Website</div>
+    <div className=''>
+    <Home/>
+    </div>
   )
 }
 
